@@ -1,0 +1,15 @@
+{
+  "name": "touch-chat-app",
+  "version": "1.0.0",
+  "description": "chat application",
+  "main": "index.js",
+  "scripts": {
+    "backend":"cd  api && pm2 --name backend start index.js",
+    "frontend": "cd client && npm start ",
+    "sockets":"cd socket && pm2 --name socket start index.js",
+    "dev":"npm run backend && npm run sockets && npm run frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hanuman Singh",
+  "license": "ISC"
+}
